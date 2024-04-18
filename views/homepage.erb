@@ -1,0 +1,9 @@
+<h1>Currency pairs</h1>
+<% symbols = @data.fetch("currencies").keys.sort %>
+<ul>
+  <% symbols.each do |the_symbol| %>
+    <li>
+      <a href="/<%= the_symbol %>"><%= the_symbol %></a>
+    </li>
+  <% end %>
+</ul>

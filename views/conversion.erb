@@ -1,4 +1,3 @@
 <h1>Convert <%= @from_currency %> to <%= @to_currency %></h1>
-<p>1 <%= @from_currency %> equals <%= @result %> <%= @to_currency %>.</p>
+<p>1 <%= @from_currency %> equals <%= @conversion_data['result'] %> <%= @to_currency %></p>
 <a href="/<%= @from_currency %>">back</a>
-
